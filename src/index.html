@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人博客</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <label for="drawer-checkbox" class="button drawer-toggle"></label>
+  </header>
+
+  <input type="checkbox" id="drawer-checkbox">
+  <div class="drawer">
+    <label for="drawer-checkbox" class="close"></label>
+    <a href="#">Home</a>
+  </div>
+  <main>
+    <div class="container">
+      <section class="post-list">
+        <div class="post">
+          <div class="content">
+            <div class="post-header">
+              <h2 class="post-title">
+                <a class="title-link" href="article.html">重磅开源KSQL：用于Apache Kafka的流数据SQL引擎</a>
+              </h2>
+            </div>
+            <div class="post-body">
+              <div class="post-excerpt">
+                KSQL与关系型数据库中的SQL还是有很大不同的。传统的SQL都是即时的一次性操作，不管是查询还是更新都是在当前的数据集上进行。而KSQL则不同，KSQL的查询和更新是持续进行的，而且数据集可以源源不断地增加。KSQL所做的其实是转换操作，也就是流式处理。
+              </div>
+
+            </div>
+            <div class="post-footer">
+              <div class="post-categories">
+                <a href="" class="post-category">PHP内核</a>
+                <a href="" class="post-category">HashTable</a>
+              </div>
+            </div>
+          </div>
+          <div class="thumbnail">
+            <a href="">
+              <picture>
+                <source media="(max-width: 650px)" srcset="https://unsplash.it/640/400">
+                <source media="(min-width: 650px)" srcset="https://unsplash.it/320">
+                <img src="https://unsplash.it/320" alt="Flowers" style="width:auto;">
+              </picture>
+            </a>
+          </div>
+        </div>
+
+        <div class="post">
+            <div class="content">
+              <div class="post-header">
+                <h2 class="post-title">
+                  <a class="title-link" href="article.html">Entity Framework Core 2.0的突破性变更</a>
+                </h2>
+              </div>
+              <div class="post-body">
+                <div class="post-excerpt">
+                    为了简化数据库驱动器的开发，EF Core更改了驱动器API，不再提供向后兼容的能力。这意味着EF Core 1.0和1.1的驱动器不再受EF Core 2.0的支持，如果要继续使用它们，必须基于EF Core 2.0的API对它们进行重写。
+                </div>
+
+              </div>
+              <div class="post-footer">
+                <div class="post-categories">
+                  <a href="" class="post-category">PHP内核</a>
+                  <a href="" class="post-category">HashTable</a>
+                </div>
+              </div>
+            </div>
+            <div class="thumbnail">
+              <a href="">
+                <picture>
+                  <source media="(max-width: 650px)" srcset="https://unsplash.it/640/400">
+                  <source media="(min-width: 650px)" srcset="https://unsplash.it/320">
+                  <img src="https://unsplash.it/320" alt="Flowers" style="width:auto;">
+                </picture>
+              </a>
+            </div>
+          </div>
+
+          <div class="post">
+              <div class="content">
+                <div class="post-header">
+                  <h2 class="post-title">
+                    <a class="title-link" href="article.html">Google研究人员提出在移动设备上运行神经网络的新技术</a>
+                  </h2>
+                </div>
+                <div class="post-body">
+                  <div class="post-excerpt">
+                      近期不少企业纷纷发布了使用深度神经网络的应用。神经网络需要做大量的计算，鉴于此，它们通常运行于具备GPU计算服务器的SaaS上。但是一些应用需要在没有因特网连接条件下运行、计算速度必须很快并且结果可靠、或是存在隐私上的考虑，这时不可能采用运行于服务器上的神经网络。
+                  </div>
+
+                </div>
+                <div class="post-footer">
+                  <div class="post-categories">
+                    <a href="" class="post-category">PHP内核</a>
+                    <a href="" class="post-category">HashTable</a>
+                  </div>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <a href="">
+                  <picture>
+                    <source media="(max-width: 650px)" srcset="https://unsplash.it/640/400">
+                    <source media="(min-width: 650px)" srcset="https://unsplash.it/320">
+                    <img src="https://unsplash.it/320" alt="Flowers" style="width:auto;">
+                  </picture>
+                </a>
+              </div>
+            </div>
+      </section>
+    </div>
+    <!-- <div class="load-more">
+      <a href="#" id="load-link" style="transform: translateX(50%);">
+          <span>加载更多</span>
+        </a>
+        <div id="spinner-wrapper" style="opacity: 0;transform: translateX(-50%);">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+          </div>
+    </div> -->
+  </main>
+  <footer class="site-footer">
+    <div>2017&copy;代码坊</div>
+  </footer>
+</body>
+<!-- <script>
+  var loading = true;
+  loadMore = document.querySelector('.load-more');
+  loadLink = document.querySelector('#load-link');
+  spinnerWrapper = document.querySelector('#spinner-wrapper');
+
+
+  loadLink.addEventListener('click', handleLoadMore);
+  spinnerWrapper.addEventListener('click', handleLoadMore);
+
+  function handleLoadMore() {
+    if (loading) {
+      event.preventDefault();
+      loading = false;
+      spinnerWrapper.style.opacity = 1;
+      loadLink.style.opacity = 0;
+
+      return false;
+      // loadMore.innerHTML = `<div id="spinner-wrapper" style="display: none">
+      //       <div class="spinner">
+      //         <div class="bounce1"></div>
+      //         <div class="bounce2"></div>
+      //         <div class="bounce3"></div>
+      //       </div>
+      //     </div>`;
+
+      //     spinnerWrapper = document.querySelector('#spinner-wrapper');
+      // spinnerWrapper.addEventListener('click', handleLoadMore);
+    } else {
+      loading = true;
+      spinnerWrapper.style.opacity = 0;
+      loadLink.style.opacity = 1;
+      return false;
+      // loadMore.innerHTML = `<a href="#" id="load-link">
+      //     <span>加载更多</span>
+      //   </a>`;
+      //   loadLink.addEventListener('click', handleLoadMore);
+
+    }
+  }
+</script> -->
+</html>

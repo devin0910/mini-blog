@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人博客</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <label for="drawer-checkbox" class="button drawer-toggle"></label>
+  </header>
+
+  <input type="checkbox" id="drawer-checkbox">
+  <div class="drawer">
+    <label for="drawer-checkbox" class="close"></label>
+    <a href="#">Home</a>
+  </div>
+  <main>
+    <div class="container">
+      <article>
+          <h2>Visual Studio的语言服务器协议</h2>
+
+          <div>
+              语言服务器协议（LSP）是Visual Studio Code的一个重要组件。语言服务器实际上是单独运行的编译器或分析器，它负责处理各种任务，如编译器错误报告、文本悬浮、代码自动完成（也就是IntelliSense），等。
+          </div>
+          <div>
+              语言服务器并不是个新概念，Vim和Emacs早就在用它实现代码自动完成功能。C#的语言服务器叫作OmniSharp，支持VS Code、Sublime、Atom、Emacs、Vim和Brackets。
+          </div>
+          <h3>避免参数数组</h3>
+          <div>
+              VS Code为TypeScript实现了另一种语言服务器。与OmniSharp不同的是，它是基于HTTP的，“通过标准输入和输出与服务器进程打交道，并使用了JSON消息格式，类似V8调试器协议的请求和响应”。
+          </div>
+          <h3>惰性的初始化成员</h3>
+          <div>
+              VS Code现在有两种语言服务器，微软认为有必要制定一个通用的标准，现有和未来的新语言共同遵循该标准。于是，语言服务器协议出现了。
+              <figure>
+                <img src="https://picsum.photos/800/500" alt="">
+                <figcaption>Image caption</figcaption>
+              </figure>
+              除了客户端工具，可能还需要一个语言扩展。GitHub上的语言服务器协议示例演示了如何创建语言扩展。
+          </div>
+          <div>
+              参数关键字是有用处的，<a href="">但与普通的函数调用相比要昂贵</a>，因为它需要内存分配。API应该为常用的参数计算提供无参数重载。
+
+              还应该提供一个<code>IEnumerable</code>的重载，这样集合在调用函数之前就不需要多此一举的被复制到一个数组中了。
+          </div>
+          <ul>
+            <li>Warner说，许多重要的系统目前都很脆弱，尽管它们的规模越来越大。为了应对在2018年变得更加频繁的攻击，将会有更多的财力和开发资源分配到改进安全性上。</li>
+            <li>云服务基础设施方面将会有工具和服务的增长，这些工具和服务将减少开发人员对基础设施的关注，开发人员能够更自由地专注于构建他们的产品和项目。</li>
+            <li>开源软件将在2018年继续发展，并将成为许多开发封闭源代码系统公司的重要竞争对手。</li>
+            <li>Warner比较关注的是目前对于网络中立性的讨论，下一个阶段的FFC投票会在12月4日进行。</li>
+          </ul>
+
+          <blockquote>
+            <p>随着大型科技公司开始收购那些专注于提升开发人员体验、解决基础设施问题以及构建更好的工作流工具的小型企业，企业的并购活动将会升温。</p>
+          </blockquote>
+
+          <pre class="line-numbers"><code class="language-css">
+              .a {
+                background-color: #ed2651;
+                border: 0;
+                border-radius: 2px;
+                box-sizing: border-box;
+                color: white;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 16px;
+              }
+
+              .b { overflow: hidden; }
+
+              .c {
+                background-color: white;
+                color: #2e184a;
+              }
+
+              .d {
+                line-height: 16px;
+                padding: 0px 8px;
+              }
+
+              .e {
+                width: 16px;
+                margin-right: 8px;
+              }
+
+              .f { height: 16px; }
+
+              /*
+                Unused class `.button__icon--animate` has been removed
+              */
+            </code></pre>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div>2017&copy;代码坊</div>
+  </footer>
+</body>
+<script src="js/prism.js"></script>
+<script>
+
+</script>
+</html>
