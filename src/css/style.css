@@ -56,6 +56,12 @@ img {
 
   > a {
     color: $head-color;
+
+    @media (--medium-viewport) {
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
   }
 }
 
@@ -69,6 +75,11 @@ img {
     padding: 4px 6px;
     margin-right: 6px;
     background: $caption-color;
+    color: rgba(121, 135, 142, .8);
+
+    @media (--medium-viewport) {
+      font-size: .6rem;
+    }
   }
 }
 
