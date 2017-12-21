@@ -108,13 +108,15 @@ a {
     content: "\00D7";
     display: block;
     text-align: center;
+    size: 40px;
+    font-size: 2rem;
   }
 }
 
 .drawer .close {
   position: absolute;
   top: 0.75rem;
-  right: 0.25rem;
+  right: 1rem;
   z-index: 1111;
   padding: 0;
 }

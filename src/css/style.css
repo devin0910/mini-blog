@@ -6,7 +6,7 @@
 @import "partials/_utility.css";
 @import "prism.css";
 
-header {
+header.site-header {
   background-color: #12171a;
   color: #f5f5f5;
   height: 3rem;
@@ -28,8 +28,28 @@ header {
   }
 
   .drawer-toggle:before {
-    top: 1.25rem;
+    top: 1rem;
   }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+  .user {
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+  }
+
+  .avatar  {
+    border-radius: 50%;
+  }
+
 }
 
 figure {
@@ -214,4 +234,8 @@ blockquote {
   background: $caption-color;
   height: 60px;
   margin-top: 1.8rem;
+
+  @media (--medium-viewport) {
+    height: 100px;
+  }
 }
