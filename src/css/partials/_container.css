@@ -14,7 +14,7 @@ body {
   color: $body-color;
 
   @media (--medium-viewport) {
-    background: #E2F5FE;
+    background: #eee;
   }
 }
 
